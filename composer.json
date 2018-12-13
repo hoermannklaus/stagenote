@@ -1,0 +1,28 @@
+{
+    "name": "worlddirect/stagenote",
+    "type": "typo3-cms-extension",
+    "description": "This extension provides a small view which shows the current system (according to URL) and current TYPO3_CONTEXT.",
+    "authors": [
+        {
+            "name": "Klaus H\u00f6rmann-Engl",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^8.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "WorldDirect\\Stagenote\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WorldDirect\\Stagenote\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "stagenote": "self.version",
+        "typo3-ter/stagenote": "self.version"
+    }
+}

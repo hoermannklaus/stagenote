@@ -1,0 +1,158 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    450,
+                    83
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": false,
+                    "_default1_show": true,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": []
+                },
+                "name": "Configuration",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "A configuration object, which represents a single configuration for a specific stage.",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "skipTypeConfiguration": false,
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "935252473334"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "The title of the stage. Only used for internal naming.",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": true,
+                            "propertyIsRequired": true,
+                            "propertyName": "title",
+                            "propertyType": "String",
+                            "uid": "1425599539825"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "The text shown with this stage note.",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "text",
+                            "propertyType": "String",
+                            "uid": "88243795090"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "Which context should trigger this note?",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "context",
+                            "propertyType": "String",
+                            "uid": "774807714628"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "The host on which the stage note is shown.",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "host",
+                            "propertyType": "String",
+                            "uid": "64482597906"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "The color of the stage note. Must contain HEX color code with leading hash.",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "color",
+                            "propertyType": "String",
+                            "uid": "976069952629"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "The size of the stage note. It can be small or large. Small only contains the text and a little bit of padding, large is 100% width.",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "size",
+                            "propertyType": "Select",
+                            "uid": "458540718357"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "Determines the position of the stage note. Whether on top of the browser or at the bottom.",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "positon",
+                            "propertyType": "Select",
+                            "uid": "462757796868"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [],
+        "description": "This extension provides a small view which shows the current system (according to URL) and current TYPO3_CONTEXT.",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 8.7.0-8.7.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "8.7.0-8.7.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "stagenote",
+        "name": "Stage Note",
+        "originalExtensionKey": "stagenote",
+        "originalVendorName": "WorldDirect",
+        "persons": [
+            {
+                "company": "",
+                "email": "kho@world-direct.at",
+                "name": "Klaus H\u00f6rmann-Engl",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [],
+        "vendorName": "WorldDirect"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2018-12-13 04:28",
+        "extension_builder_version": "8.10.2",
+        "be_user": " (1)"
+    }
+}
