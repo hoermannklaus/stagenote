@@ -7,6 +7,7 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Object\ObjectManager;
 use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 use WorldDirect\Stagenote\Domain\Repository\ConfigurationRepository;
+use WorldDirect\Stagenote\Utility\Configuration;
 
 /**
  * Class ContentPostProcessHook
@@ -31,17 +32,9 @@ class ContentPostProcessHook implements SingletonInterface {
      * @param $parameters array
      */
     public function insertUncachedContent(&$parameters) {
-        $configurations = $this->configurationRepository->findAll()->toArray();
-        DebuggerUtility::var_dump($configurations);
-        // TODO: Get all configurations
-        // TODO: Go through each configuration and see which one is relevant.
-        // TODO: If there are more than 1 configurations relevant use WHICH ONE?
-        // TODO: Then build the stage note using a template.
-        // TODO: Render the stage note content into the template.
-
+        $stageNoteContent = Configuration::buildStageNote($this->configurationRepository);
         $feobj = &$parameters['pObj'];
-        DebuggerUtility::var_dump("Hello World");
-        $feobj->content = str_replace('</body>', 'Hello World2</body>', $feobj->content);
+        $feobj->content = str_replace('</body>', $stageNoteContent . '</body>', $feobj->content);
     }
 
     /**

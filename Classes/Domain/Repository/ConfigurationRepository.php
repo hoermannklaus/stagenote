@@ -1,6 +1,8 @@
 <?php
 namespace WorldDirect\Stagenote\Domain\Repository;
 
+use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
+
 /***
  *
  * This file is part of the "Staging Note" Extension for TYPO3 CMS.
@@ -17,4 +19,9 @@ namespace WorldDirect\Stagenote\Domain\Repository;
  */
 class ConfigurationRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 {
+    public function initializeObject() {
+        $defaultQuerySettings = $this->objectManager->get(Typo3QuerySettings::class);
+        $defaultQuerySettings->setRespectStoragePage(FALSE);
+        $this->setDefaultQuerySettings($defaultQuerySettings);
     }
+}
