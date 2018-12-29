@@ -2,9 +2,9 @@
 
 namespace WorldDirect\Stagenote\Utility;
 
-use Doctrine\Common\Util\Debug;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
+use TYPO3\CMS\Fluid\View\StandaloneView;
 
 /**
  * Class Configuration
@@ -68,9 +68,14 @@ class Configuration {
     public static function buildStageNote($configRepo) {
         $configuration = self::getRelevantConfiguration($configRepo);
         if (isset($configuration)) {
-            // TODO: Then build the stage note using a template.
-            // TODO: Render the stage note content into the template.
-            return $configuration->getText();
+            $standaloneView = GeneralUtility::makeInstance(StandaloneView::class);
+            $standaloneView->setTemplatePathAndFilename(GeneralUtility::getFileAbsFileName('EXT:stagenote/Resources/Private/Templates/Show.html'));
+            $standaloneView->assignMultiple(
+                array(
+                    'config' => $configuration
+                )
+            );
+            return $standaloneView->render();
         }
     }
 }
