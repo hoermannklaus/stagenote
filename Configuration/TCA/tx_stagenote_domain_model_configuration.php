@@ -17,7 +17,7 @@ return [
             'endtime' => 'endtime',
         ],
         'searchFields' => 'title,text,context,host,color,size,positon',
-        'iconfile' => 'EXT:stagenote/Resources/Public/Icons/tx_stagenote_domain_model_configuration.gif'
+        'iconfile' => 'EXT:stagenote/Resources/Public/Icons/tx_stagenote_domain_model_configuration.svg'
     ],
     'interface' => [
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, text, context, host, color, size, positon',
@@ -167,7 +167,8 @@ return [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['-- Label --', 0],
+                    ['Large', 0],
+                    ['Small', 1]
                 ],
                 'size' => 1,
                 'maxitems' => 1,
@@ -181,7 +182,8 @@ return [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['-- Label --', 0],
+                    ['Top', 0],
+                    ['Bottom', 1]
                 ],
                 'size' => 1,
                 'maxitems' => 1,
