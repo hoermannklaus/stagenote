@@ -4,7 +4,7 @@
 		<header/>
 		<body>
 			<trans-unit id="tx_stagenote_domain_model_configuration">
-				<source>Configuration</source>
+				<source>Stage Note Configuration</source>
 			</trans-unit>
 			<trans-unit id="tx_stagenote_domain_model_configuration.title">
 				<source>Title</source>
