@@ -26,7 +26,7 @@ Stage Note
 		This extension provides a small view which shows the current system (according to URL) and current TYPO3_CONTEXT.
 
 	:Keywords:
-		comma,separated,list,of,keywords
+		notification,stage,context,toast,development
 
 	:Copyright:
 		2018

@@ -167,8 +167,8 @@ return [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['Large', 0],
-                    ['Small', 1]
+                    ['LLL:EXT:stagenote/Resources/Private/Language/locallang_db.xlf:tx_stagenote_domain_model_configuration.size.fullNote', 0],
+                    ['LLL:EXT:stagenote/Resources/Private/Language/locallang_db.xlf:tx_stagenote_domain_model_configuration.size.headerOnly', 1]
                 ],
                 'size' => 1,
                 'maxitems' => 1,
@@ -177,13 +177,14 @@ return [
         ],
         'positon' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:stagenote/Resources/Private/Language/locallang_db.xlf:tx_stagenote_domain_model_configuration.positon',
+            'label' => 'LLL:EXT:stagenote/Resources/Private/Language/locallang_db.xlf:tx_stagenote_domain_model_configuration.position',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['Top', 0],
-                    ['Bottom', 1]
+                    ['LLL:EXT:stagenote/Resources/Private/Language/locallang_db.xlf:tx_stagenote_domain_model_configuration.position.top', 0],
+                    ['LLL:EXT:stagenote/Resources/Private/Language/locallang_db.xlf:tx_stagenote_domain_model_configuration.position.middle', 1],
+                    ['LLL:EXT:stagenote/Resources/Private/Language/locallang_db.xlf:tx_stagenote_domain_model_configuration.position.bottom', 2]
                 ],
                 'size' => 1,
                 'maxitems' => 1,

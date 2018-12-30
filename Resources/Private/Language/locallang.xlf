@@ -3,30 +3,7 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2018-12-13T16:28:47Z" product-name="stagenote">
 		<header/>
 		<body>
-			<trans-unit id="tx_stagenote_domain_model_configuration">
-				<source>Configuration</source>
-			</trans-unit>
-			<trans-unit id="tx_stagenote_domain_model_configuration.title">
-				<source>Title</source>
-			</trans-unit>
-			<trans-unit id="tx_stagenote_domain_model_configuration.text">
-				<source>Text</source>
-			</trans-unit>
-			<trans-unit id="tx_stagenote_domain_model_configuration.context">
-				<source>Context</source>
-			</trans-unit>
-			<trans-unit id="tx_stagenote_domain_model_configuration.host">
-				<source>Host</source>
-			</trans-unit>
-			<trans-unit id="tx_stagenote_domain_model_configuration.color">
-				<source>Color</source>
-			</trans-unit>
-			<trans-unit id="tx_stagenote_domain_model_configuration.size">
-				<source>Size</source>
-			</trans-unit>
-			<trans-unit id="tx_stagenote_domain_model_configuration.positon">
-				<source>Positon</source>
-			</trans-unit>
+			<trans-unit id="tx_stagenote.toast.close"><source>Close note</source></trans-unit>
 		</body>
 	</file>
 </xliff>

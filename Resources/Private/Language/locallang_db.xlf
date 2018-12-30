@@ -3,30 +3,20 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2018-12-13T16:28:47Z" product-name="stagenote">
 		<header/>
 		<body>
-			<trans-unit id="tx_stagenote_domain_model_configuration">
-				<source>Stage Note Configuration</source>
-			</trans-unit>
-			<trans-unit id="tx_stagenote_domain_model_configuration.title">
-				<source>Title</source>
-			</trans-unit>
-			<trans-unit id="tx_stagenote_domain_model_configuration.text">
-				<source>Text</source>
-			</trans-unit>
-			<trans-unit id="tx_stagenote_domain_model_configuration.context">
-				<source>Context</source>
-			</trans-unit>
-			<trans-unit id="tx_stagenote_domain_model_configuration.host">
-				<source>Host</source>
-			</trans-unit>
-			<trans-unit id="tx_stagenote_domain_model_configuration.color">
-				<source>Color</source>
-			</trans-unit>
-			<trans-unit id="tx_stagenote_domain_model_configuration.size">
-				<source>Size</source>
-			</trans-unit>
-			<trans-unit id="tx_stagenote_domain_model_configuration.positon">
-				<source>Positon</source>
-			</trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration"><source>Stage Note Configuration</source></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.title"><source>Stage note title (shown in header)</source></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.text"><source>Text shown in body (only with size 'Full note')</source></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.context"><source>Shown at TYPO3 context</source></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.host"><source>Shown at host</source></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.color"><source>Stage note highlight color</source></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.size"><source>Stage note size</source></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.size.fullNote"><source>Full note</source></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.size.headerOnly"><source>Header only</source></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.position"><source>Position of stage notification</source></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.position.top"><source>Top</source></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.position.middle"><source>Middle</source></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.position.bottom"><source>Bottom</source></trans-unit>
+			<trans-unit id="tx_stagenote_extmng.includeBootstrap4"><source>Include Bootstrap v4.2 Css and JavaScript?</source></trans-unit>
 		</body>
 	</file>
 </xliff>
