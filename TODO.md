@@ -8,6 +8,6 @@
 - Configuration TCA: Use palettes to organize fields better. 
 - The label for the hidden field is missing.
 - Add Typoscript contstants to basically disable/enable the stage notifications.
-- Rename field "positon" to "position"
 - Use the PS2 format to format the code.
 - Add german language file.
+- Write documentation.
