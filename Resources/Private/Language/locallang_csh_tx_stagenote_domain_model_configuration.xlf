@@ -3,13 +3,13 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2018-12-13T16:28:47Z" product-name="stagenote">
 		<header/>
 		<body>
-			<trans-unit id="title.description"><source>The title of the stage. Only used for internal naming.</source></trans-unit>
+			<trans-unit id="title.description"><source>The title of the stage. Shown in the header of the notification.</source></trans-unit>
 			<trans-unit id="text.description"><source>The text shown with this stage note.</source></trans-unit>
 			<trans-unit id="context.description"><source>Which context should trigger this note?</source></trans-unit>
 			<trans-unit id="host.description"><source>The host on which the stage note is shown.</source></trans-unit>
-			<trans-unit id="color.description"><source>The color of the stage note. Must contain HEX color code with leading hash.</source></trans-unit>
-			<trans-unit id="size.description"><source>The size of the stage note. It can be small or large. Small only contains the text and a little bit of padding, large is 100% width.</source></trans-unit>
-			<trans-unit id="position.description"><source>Determines the position of the stage note. Whether on top of the browser or at the bottom.</source></trans-unit>
+			<trans-unit id="color.description"><source>The color of the stage note.</source></trans-unit>
+			<trans-unit id="size.description"><source>The size of the stage note. Whether to show only the header or also show the body.</source></trans-unit>
+			<trans-unit id="position.description"><source>Determines the position of the stage note. There are mutliple options where to show the notes.</source></trans-unit>
 		</body>
 	</file>
 </xliff>

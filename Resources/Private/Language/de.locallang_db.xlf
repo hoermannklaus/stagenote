@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-12-13T16:28:47Z" product-name="stagenote">
+		<header/>
+		<body>
+			<trans-unit id="tx_stagenote_domain_model_configuration"><source>Stage Note Configurations</source><target>Stage Notiz Konfiguration</target></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.title"><source>Title</source><target>Titel</target></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.text"><source>Text</source><target>Inhalt</target></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.context"><source>TYPO3 context</source><target>TYPO3 Kontexxt</target></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.host"><source>Host</source><target>Host</target></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.color"><source>Highlight color</source><target>Highlight Farbe</target></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.color.color"><source>Select color</source><target>Farbe auswählen</target></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.size"><source>Size</source><target>Größe</target></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.size.fullNote"><source>Full note</source><target>Gesamte Notiz</target></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.size.headerOnly"><source>Header only</source><target>Nur Kopfzeile</target></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.position"><source>Position</source><target>Position</target></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.position.top"><source>Top</source><target>Oben</target></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.position.middle"><source>Middle</source><target>Mitte</target></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.position.bottom"><source>Bottom</source><target>Unten</target></trans-unit>
+			<trans-unit id="tx_stagenote_extmng.includeBootstrap4"><source>Include Bootstrap v4.2 Css and JavaScript files?</source><target>Soll das Bootstrap v4.2 Css und JavaScript eingefügt werden?</target></trans-unit>
+		</body>
+	</file>
+</xliff>

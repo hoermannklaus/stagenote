@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-12-13T16:28:47Z" product-name="stagenote">
+		<header/>
+		<body>
+			<trans-unit id="title.description"><source>The title of the stage. Shown in the header of the notification.</source><target>Der Titel wird in der Kopfzeile der Notiz angezeigt.</target></trans-unit>
+			<trans-unit id="text.description"><source>The text shown with this stage note.</source><target>Der Inhalt der Notiz.</target></trans-unit>
+			<trans-unit id="context.description"><source>Which TYPo3 context should trigger this note?</source><target>Bei welchem TYPO3 Context soll die Nachricht angezeigt werden?</target></trans-unit>
+			<trans-unit id="host.description"><source>The host on which the stage note is shown.</source><target>Bei welchem Host soll die Notiz angezeigt werden?</target></trans-unit>
+			<trans-unit id="color.description"><source>The color of the stage note.</source><target></target>Die Highlight Farbe der Notiz.</trans-unit>
+			<trans-unit id="size.description"><source>The size of the stage note. Whether to show only the header or also show the body.</source><target>Die Größe der Notiz im Frontend. Entweder es wird nur die Kopfzeile angezeigt, oder auch der Inhalt.</target></trans-unit>
+			<trans-unit id="position.description"><source>Determines the position of the stage note. There are mutliple options where to show the notes.</source><target>Hier wird die Position der Notiz angezeigt. Hier gibt es mehrere Optionen.</target></trans-unit>
+		</body>
+	</file>
+</xliff>
