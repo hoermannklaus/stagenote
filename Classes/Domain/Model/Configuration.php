@@ -74,7 +74,7 @@ class Configuration extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @var int
      * @validate NotEmpty
      */
-    protected $positon = 0;
+    protected $position = 0;
 
     /**
      * Returns the title
@@ -161,24 +161,24 @@ class Configuration extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     }
 
     /**
-     * Returns the positon
+     * Returns the position
      *
-     * @return int $positon
+     * @return int $position
      */
-    public function getPositon()
+    public function getPosition()
     {
-        return $this->positon;
+        return $this->position;
     }
 
     /**
-     * Sets the positon
+     * Sets the position
      *
-     * @param int $positon
+     * @param int $position
      * @return void
      */
-    public function setPositon($positon)
+    public function setPosition($position)
     {
-        $this->positon = $positon;
+        $this->position = $position;
     }
 
     /**

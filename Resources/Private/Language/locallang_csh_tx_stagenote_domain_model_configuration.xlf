@@ -9,7 +9,7 @@
 			<trans-unit id="host.description"><source>The host on which the stage note is shown.</source></trans-unit>
 			<trans-unit id="color.description"><source>The color of the stage note. Must contain HEX color code with leading hash.</source></trans-unit>
 			<trans-unit id="size.description"><source>The size of the stage note. It can be small or large. Small only contains the text and a little bit of padding, large is 100% width.</source></trans-unit>
-			<trans-unit id="positon.description"><source>Determines the position of the stage note. Whether on top of the browser or at the bottom.</source></trans-unit>
+			<trans-unit id="position.description"><source>Determines the position of the stage note. Whether on top of the browser or at the bottom.</source></trans-unit>
 		</body>
 	</file>
 </xliff>

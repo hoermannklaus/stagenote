@@ -12,7 +12,7 @@ CREATE TABLE tx_stagenote_domain_model_configuration (
 	host varchar(255) DEFAULT '' NOT NULL,
 	color varchar(255) DEFAULT '' NOT NULL,
 	size int(11) DEFAULT '0' NOT NULL,
-	positon int(11) DEFAULT '0' NOT NULL,
+	position int(11) DEFAULT '0' NOT NULL,
 
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,

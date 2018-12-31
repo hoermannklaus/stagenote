@@ -2,9 +2,9 @@
 <script src="typo3conf/ext/stagenote/Resources/Public/JavaScript/bootstrap.bundle.min.js"></script>
 
 <f:variable name="position">
-    <f:if condition="{config.positon} == '0'">
+    <f:if condition="{config.position} == '0'">
         <f:then>top: 0;</f:then>
-        <f:else if="{config.positon} == '1'">top: 50%;</f:else>
+        <f:else if="{config.position} == '1'">top: 50%;</f:else>
         <f:else>bottom: 0;</f:else>
     </f:if>
 </f:variable>

@@ -177,24 +177,24 @@ class ConfigurationTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function getPositonReturnsInitialValueForInt()
+    public function getPositionReturnsInitialValueForInt()
     {
         self::assertSame(
             0,
-            $this->subject->getPositon()
+            $this->subject->getPosition()
         );
     }
 
     /**
      * @test
      */
-    public function setPositonForIntSetsPositon()
+    public function setPositionForIntSetsPosition()
     {
-        $this->subject->setPositon(12);
+        $this->subject->setPosition(12);
 
         self::assertAttributeEquals(
             12,
-            'positon',
+            'position',
             $this->subject
         );
     }

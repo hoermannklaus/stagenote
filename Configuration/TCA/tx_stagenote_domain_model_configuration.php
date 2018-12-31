@@ -16,14 +16,14 @@ return [
             'starttime' => 'starttime',
             'endtime' => 'endtime',
         ],
-        'searchFields' => 'title,text,context,host,color,size,positon',
+        'searchFields' => 'title,text,context,host,color,size,position',
         'iconfile' => 'EXT:stagenote/Resources/Public/Icons/tx_stagenote_domain_model_configuration.svg'
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, text, context, host, color, size, positon',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, text, context, host, color, size, position',
     ],
     'types' => [
-        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, text, context, host, color, size, positon, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
+        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, text, context, host, color, size, position, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -175,7 +175,7 @@ return [
                 'eval' => 'required'
             ],
         ],
-        'positon' => [
+        'position' => [
             'exclude' => true,
             'label' => 'LLL:EXT:stagenote/Resources/Private/Language/locallang_db.xlf:tx_stagenote_domain_model_configuration.position',
             'config' => [

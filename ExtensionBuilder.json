@@ -107,7 +107,7 @@
                             "propertyIsExcludeField": true,
                             "propertyIsL10nModeExclude": false,
                             "propertyIsRequired": true,
-                            "propertyName": "positon",
+                            "propertyName": "position",
                             "propertyType": "Select",
                             "uid": "462757796868"
                         }
