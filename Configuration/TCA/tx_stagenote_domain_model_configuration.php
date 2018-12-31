@@ -156,8 +156,18 @@ return [
             'label' => 'LLL:EXT:stagenote/Resources/Private/Language/locallang_db.xlf:tx_stagenote_domain_model_configuration.color',
             'config' => [
                 'type' => 'input',
-                'size' => 30,
-                'eval' => 'trim,required'
+                'size' => 10,
+                'wizards' => array(
+                    '_PADDING' => 2,
+                    'color' => array(
+                        'title' => 'LLL:EXT:stagenote/Resources/Private/Language/locallang_db.xlf:tx_stagenote_domain_model_configuration.color.color',
+                        'type' => 'colorbox',
+                        'dim' => '16x12',
+                        'tableStyle' => 'border:solid 1px black;',
+                        'script' => 'wizard_colorpicker.php',
+                        'JSopenParams' => 'height=300,width=250,status=0,menubar=0,scrollbars=1'
+                    ),
+                ),
             ],
         ],
         'size' => [
