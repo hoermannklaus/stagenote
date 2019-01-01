@@ -15,48 +15,28 @@ class Configuration {
 
     /**
      * Function returns for this environment the relevant configuration.
-     * An environment is setup using the TYPO3_CONTEXT and the current HOST.
-     * If multiple configurations fit, it uses the first entered configuration (the one with the lowest uid).
-     * A configuration with a host set is always more specific than a configuration without a host set.
+     *
+     * A stage note is shown when the configured context matches the current TYPO3_context.
+     * If a stage note configuration has set a host, the host must also match the current host. If no host is configured
+     * the state not will be shown on all hosts.
      *
      * @param $configRepo
      * @return array
      */
-    public static function getRelevantConfiguration($configRepo) {
+    public static function getRelevantConfigurations($configRepo) {
         $allConfigurations = $configRepo->findAll()->toArray();
-        $relevantContextConfigs = [];
-        $relevantConfig = null;
-
+        $relevantConfigurations = array();
         $currentContext = GeneralUtility::getApplicationContext()->__toString();
         $currentHost = $_SERVER['HTTP_HOST'];
 
         foreach ($allConfigurations as $config) {
             if ($config->getContext() != '' && strtolower($config->getContext()) == strtolower($currentContext)) {
-                $relevantContextConfigs[] = $config;
-            }
-        }
-
-        if (count($relevantContextConfigs) == 1) {
-            $config = $relevantContextConfigs[0];
-            if ($config->getHost() != '' && strtolower($config->getHost()) == strtolower($currentHost)) {
-                $relevantConfig = $config;
-            } else {
-                $relevantConfig = $config;
-            }
-        } else if (count($relevantContextConfigs) > 1) {
-            $relevantHostConfigs = [];
-            foreach ($relevantContextConfigs as $config) {
-                if ($config->getHost() != '' && strtolower($config->getHost()) == strtolower($currentHost)) {
-                    $relevantHostConfigs[] = $config;
+                if (($config->getHost() != '' && strtolower($config->getHost()) == strtolower($currentHost)) || ($config->getHost() == '')) {
+                    $relevantConfigurations[$config->getPosition()][] = $config;
                 }
             }
-            if (count($relevantHostConfigs) == 1) {
-                $relevantConfig = $relevantHostConfigs[0];
-            } else if (count($relevantHostConfigs) > 1) {
-                // TODO: Use the one with the lowest uid --> Sort using UID
-            }
         }
-        return $relevantConfig;
+        return $relevantConfigurations;
     }
 
     /**
@@ -66,13 +46,13 @@ class Configuration {
      * @return string
      */
     public static function buildStageNote($configRepo) {
-        $configuration = self::getRelevantConfiguration($configRepo);
-        if (isset($configuration)) {
+        $configurations = self::getRelevantConfigurations($configRepo);
+        if (isset($configurations) && sizeof($configurations) > 0) {
             $standaloneView = GeneralUtility::makeInstance(StandaloneView::class);
             $standaloneView->setTemplatePathAndFilename(GeneralUtility::getFileAbsFileName('EXT:stagenote/Resources/Private/Templates/Show.html'));
             $standaloneView->assignMultiple(
                 array(
-                    'config' => $configuration
+                    'configs' => $configurations,
                 )
             );
             return $standaloneView->render();
