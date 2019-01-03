@@ -6,7 +6,7 @@
 			<trans-unit id="tx_stagenote_domain_model_configuration"><source>Stage Note Configurations</source><target>Stage Notiz Konfiguration</target></trans-unit>
 			<trans-unit id="tx_stagenote_domain_model_configuration.title"><source>Title</source><target>Titel</target></trans-unit>
 			<trans-unit id="tx_stagenote_domain_model_configuration.text"><source>Text</source><target>Inhalt</target></trans-unit>
-			<trans-unit id="tx_stagenote_domain_model_configuration.context"><source>TYPO3 context</source><target>TYPO3 Kontexxt</target></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.context"><source>TYPO3 context</source><target>TYPO3 Kontext</target></trans-unit>
 			<trans-unit id="tx_stagenote_domain_model_configuration.host"><source>Host</source><target>Host</target></trans-unit>
 			<trans-unit id="tx_stagenote_domain_model_configuration.color"><source>Highlight color</source><target>Highlight Farbe</target></trans-unit>
 			<trans-unit id="tx_stagenote_domain_model_configuration.color.color"><source>Select color</source><target>Farbe auswählen</target></trans-unit>
@@ -17,7 +17,10 @@
 			<trans-unit id="tx_stagenote_domain_model_configuration.position.top"><source>Top</source><target>Oben</target></trans-unit>
 			<trans-unit id="tx_stagenote_domain_model_configuration.position.middle"><source>Middle</source><target>Mitte</target></trans-unit>
 			<trans-unit id="tx_stagenote_domain_model_configuration.position.bottom"><source>Bottom</source><target>Unten</target></trans-unit>
-			<trans-unit id="tx_stagenote_extmng.includeBootstrap4"><source>Include Bootstrap v4.2 Css and JavaScript files?</source><target>Soll das Bootstrap v4.2 Css und JavaScript eingefügt werden?</target></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.palette.basic"><source>Basic</source><target>Allgemein</target></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.palette.text"><source>Text</source><target>Texte</target></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.palette.filter"><source>Filter</source><target>Filter</target></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.palette.display"><source>Display</source><target>Anzeige</target></trans-unit>
 		</body>
 	</file>
 </xliff>

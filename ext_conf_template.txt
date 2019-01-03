@@ -1,2 +1,0 @@
-# cat=bootstrap/enable/101; type=boolean; label=LLL:EXT:stagenote/Resources/Private/Language/locallang_be.xlf:tx_stagenote_extmng.includeBootstrap4
-includeBootstrap4 = 1

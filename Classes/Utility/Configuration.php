@@ -3,6 +3,9 @@
 namespace WorldDirect\Stagenote\Utility;
 
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Extbase\Configuration\ConfigurationManager;
+use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
+use TYPO3\CMS\Extbase\Object\ObjectManager;
 use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 use TYPO3\CMS\Fluid\View\StandaloneView;
 
@@ -53,9 +56,22 @@ class Configuration {
             $standaloneView->assignMultiple(
                 array(
                     'configs' => $configurations,
+                    'settings' => Configuration::getSettings(),
                 )
             );
             return $standaloneView->render();
         }
+    }
+
+    /**
+     * Returns the full configuration (settings and flexform) for the currently selected plugin.
+     *
+     * @return array
+     */
+    public static function getSettings() {
+        $objectManager = GeneralUtility::makeInstance(ObjectManager::class);
+        $configurationManager = $objectManager->get(ConfigurationManager::class);
+        $fullTyposcript = $configurationManager->getConfiguration(ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT);
+        return $fullTyposcript['plugin.']['tx_stagenote.']['settings.'];
     }
 }

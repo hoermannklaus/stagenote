@@ -17,7 +17,10 @@
 			<trans-unit id="tx_stagenote_domain_model_configuration.position.top"><source>Top</source></trans-unit>
 			<trans-unit id="tx_stagenote_domain_model_configuration.position.middle"><source>Middle</source></trans-unit>
 			<trans-unit id="tx_stagenote_domain_model_configuration.position.bottom"><source>Bottom</source></trans-unit>
-			<trans-unit id="tx_stagenote_extmng.includeBootstrap4"><source>Include Bootstrap v4.2 Css and JavaScript files?</source></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.palette.basic"><source>Basic</source></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.palette.text"><source>Text</source></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.palette.filter"><source>Filter</source></trans-unit>
+			<trans-unit id="tx_stagenote_domain_model_configuration.palette.display"><source>Display</source></trans-unit>
 		</body>
 	</file>
 </xliff>

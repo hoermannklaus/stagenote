@@ -1,6 +1,7 @@
-<!-- TODO -->
+<f:if condition="{settings.includeBootstrap4}">
 <link rel="stylesheet" type="text/css" href="typo3conf/ext/stagenote/Resources/Public/Css/bootstrap.min.css"/>
 <script src="typo3conf/ext/stagenote/Resources/Public/JavaScript/bootstrap.bundle.min.js"></script>
+</f:if>
 
 <!-- TOP NOTES -->
 <f:if condition="{configs.0 -> f:count()} > 0">
@@ -34,6 +35,7 @@
     });
 </script>
 
+<f:comment><!-- Single Toast section --></f:comment>
 <f:section name="Toast">
     <div class="toast" data-autohide="false">
         <div class="toast-header">

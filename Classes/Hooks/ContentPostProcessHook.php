@@ -41,7 +41,9 @@ class ContentPostProcessHook implements SingletonInterface {
      * @param $parameters array
      */
     public function insertCachedContent(&$parameters) {
-
+        $stageNoteContent = Configuration::buildStageNote($this->configurationRepository);
+        $feobj = &$parameters['pObj'];
+        $feobj->content = str_replace('</body>', $stageNoteContent . '</body>', $feobj->content);
     }
 
     /**

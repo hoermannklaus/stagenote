@@ -22,8 +22,15 @@ return [
     'interface' => [
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, text, context, host, color, size, position',
     ],
+    'palettes' => [
+        'basic' => ['showitem' => 'hidden'],
+        'text' => ['showitem' => 'title, text'],
+        'filter' => ['showitem' => 'context, host'],
+        'display' => ['showitem' => 'color, size, position']
+    ],
     'types' => [
-        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, text, context, host, color, size, position, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
+        //'1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource'],
+        '1' => ['showitem' => '--palette--;LLL:EXT:stagenote/Resources/Private/Language/locallang_db.xlf:tx_stagenote_domain_model_configuration.palette.basic;basic, --palette--;LLL:EXT:stagenote/Resources/Private/Language/locallang_db.xlf:tx_stagenote_domain_model_configuration.palette.text;text, --palette--;LLL:EXT:stagenote/Resources/Private/Language/locallang_db.xlf:tx_stagenote_domain_model_configuration.palette.filter;filter, --palette--;LLL:EXT:stagenote/Resources/Private/Language/locallang_db.xlf:tx_stagenote_domain_model_configuration.palette.display;display']
     ],
     'columns' => [
         'sys_language_uid' => [
