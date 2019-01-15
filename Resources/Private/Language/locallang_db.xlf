@@ -3,6 +3,9 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2018-12-13T16:28:47Z" product-name="stagenote">
 		<header/>
 		<body>
+			<trans-unit id="constants_category"><source>Stage Note</source></trans-unit>
+			<trans-unit id="constants_includeBootstrap4"><source>Bootstrap V4.2.x:Should Bootstrap in Version 4.2.x be inserted? (Only when page not already has Bootstrap included)</source></trans-unit>
+			<trans-unit id="constants_displayType"><source>Display Type:Chose between 2 display types. Bootstrap 'alert' (default) or 'toast' (available from Bootstrap v4.2.x up).</source></trans-unit>
 			<trans-unit id="tx_stagenote_domain_model_configuration"><source>Stage Note Configurations</source></trans-unit>
 			<trans-unit id="tx_stagenote_domain_model_configuration.title"><source>Title</source></trans-unit>
 			<trans-unit id="tx_stagenote_domain_model_configuration.text"><source>Text</source></trans-unit>

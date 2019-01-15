@@ -3,6 +3,8 @@
 <script src="typo3conf/ext/stagenote/Resources/Public/JavaScript/bootstrap.bundle.min.js"></script>
 </f:if>
 
+<f:debug>{_all}</f:debug>
+
 <!-- TOP NOTES -->
 <f:if condition="{configs.0 -> f:count()} > 0">
     <div style="position:fixed; z-index: 10000; top:0; margin: 10px;">
@@ -34,6 +36,11 @@
         $(".toast").toast('show');
     });
 </script>
+
+<f:comment><!-- Single Alert section --></f:comment>
+<f:section name="Alert">
+
+</f:section>
 
 <f:comment><!-- Single Toast section --></f:comment>
 <f:section name="Toast">
